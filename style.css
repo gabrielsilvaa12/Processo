@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.home {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;;
+}
+
+.pesquisar-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+}
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+    background: rgb(141, 141, 141);
+    border-radius: 20px;
+    margin: 20px;
+    overflow: hidden;
+    height: 50px;
+    width: 800px;
+}
+
+
+.pesquisar input {
+    border: none;
+    padding: 5px;
+    outline: none;
+    width: 100%;
+    background: rgb(141, 141, 141);
+    color: white;
+}
+
+input::placeholder {
+    text-align: left;
+    padding: 20px;
+    color: rgb(255, 255, 255); 
+    opacity: 1; 
+}
+  
+.banner {
+    position: relative;
+    width: 1200px;
+    height: 400px; 
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.corretor-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #b0892b;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.pesquisarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -30px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+#pesquisar1 {
+    display: flex;
+    align-items: center;
+    background: rgb(179, 179, 179);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 350px;
+    height: 20px;
+    position: relative;
+}
+
+#pesquisar1 input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+#pesquisar1 i {
+    color: gray;
+    position: absolute;
+    right: 15px;
+    font-size: 16px;
+}
+
+#botaoAvancar {
+    background-color: #b0892b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.lancamentos {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.lancamentos h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap; 
+}
+
+.card {
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: white;
+    text-align: left;
+}
+
+.cardHeader {
+    background-color: #5a4a2f;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body .titulo {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.carregar-mais {
+    display: block;
+    margin: 40px auto;
+    padding: 12px 24px;
+    background-color: #b0892b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cadastrar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.cadastrar-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.cadastrar-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    z-index: 1;
+}
+
+.cadastrar h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cadastrar p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cadastrar input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    background: rgb(179, 179, 179);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#login::placeholder {
+    color: #333;
+}
+
+.cadastrar button {
+    background-color: #b0892b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
